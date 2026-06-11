@@ -9,3 +9,5 @@ console.log("Age: " + age);
 console.log("Living in city: " + city);
 console.log("Country: " + country);
 console.log("Career Goal: " + profession);
+
+alert("Hello " + firstName + ", Welcome!");
