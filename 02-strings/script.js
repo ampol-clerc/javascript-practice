@@ -3,6 +3,7 @@ var message = "Hello";
 var helloName = "Ampol";
 alert(message + ", " + helloName);
 
+
 // String Lengths and Retrieving the Number of Characters
 // You have written 182 characters, you have -42 characters left.
 var post = prompt("Input your post: ");
@@ -22,3 +23,15 @@ console.log("Original Tweet: " + tweet);
 console.log("Truncated Tweet (Under 140): " + tweetUnder140);
 console.log("Truncated Character Count: " + result);
 alert("Your Tweet: " + result + " chars, " + tweetUnder140);
+
+
+// Changing Casing (Capitalization)
+// Hello, "Name"
+var name = prompt("What is your name?");
+var firstChar = name.slice(0,1);
+var upperCaseFirstChar = firstChar.toUpperCase();
+var restOfName = name.slice(1,name.length);
+restOfName = restOfName.toLowerCase();
+var capitalisedName = upperCaseFirstChar + restOfName;
+
+alert("Hello, " + capitalisedName);
