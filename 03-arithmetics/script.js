@@ -12,3 +12,14 @@ alert("Remainder Candy: " + remainder);
 var dogAge = prompt("How old is your dog?");
 var humanAge = ((dogAge - 2) * 4) + 21;
 alert("Your dog is " + humanAge + " years old in human years.");
+
+// Increment and Decrement expressions
+var score = 5;
+score++;
+console.log("Score after increment: " + score);
+alert("Score after increment: " + score);
+
+var lives = 3;
+lives--;
+console.log("Lives after decrement: " + lives);
+alert("Lives after decrement: " + lives);
