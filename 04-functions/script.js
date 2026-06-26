@@ -27,3 +27,14 @@ function lifeInWeeks(age) {
 }
 
 lifeInWeeks(29);
+
+// Part 3: Functions with Outputs and Return Values
+
+function bmiCalculator(weight, height) {
+    var bmi = weight / Math.pow(height, 2);
+    return Math.round(bmi);
+}
+
+var myBMI = bmiCalculator(65, 1.8);
+console.log("Calculated BMI value: " + myBMI);
+// alert("Your calculated BMI is " + myBMI);
