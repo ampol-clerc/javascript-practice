@@ -32,3 +32,12 @@ function fizzBuzz() {
     count++;
     console.log(output);
 }
+
+while (count <= 15) {
+    fizzBuzz();
+}
+
+console.log("Final FizzBuzz Array Output:");
+console.log(output);
+
+alert("FizzBuzz Results (1-15):\n" + output.join(", "));
