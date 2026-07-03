@@ -41,3 +41,20 @@ console.log("Final FizzBuzz Array Output:");
 console.log(output);
 
 alert("FizzBuzz Results (1-15):\n" + output.join(", "));
+
+// Who's Buying Lunch? Challenge
+var names = ["Ampol", "Ben", "Jenny", "Bernard", "Filipe"];
+
+function whosPaying(names) {
+    
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to buy lunch today!";
+}
+
+var lunchResult = whosPaying(names);
+
+console.log("Lunch Roulette Result: " + lunchResult);
+alert("Lunch Matcher:\n" + lunchResult);
