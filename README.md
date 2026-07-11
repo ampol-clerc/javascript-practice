@@ -10,6 +10,8 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 02 | Strings | string concatenation, measuring and slicing text, formatting user input with casing methods |
 | 03 | Arithmetics | arithmetic operators, modulo for remainder calculation, increment and decrement expressions, user input with prompt |
 | 04 | Functions | defining and calling functions, passing parameters and arguments, returning computed values, using Math methods for calculations |
+| 05 | Control Statements | generating random numbers, if/else conditions, comparison and logical operators, rounding decimals with toFixed |
+
 
 ## Tools
 - JavaScript
