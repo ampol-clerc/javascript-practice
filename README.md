@@ -11,7 +11,7 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 03 | Arithmetics | arithmetic operators, modulo for remainder calculation, increment and decrement expressions, user input with prompt |
 | 04 | Functions | defining and calling functions, passing parameters and arguments, returning computed values, using Math methods for calculations |
 | 05 | Control Statements | generating random numbers, if/else conditions, comparison and logical operators, rounding decimals with toFixed |
-
+| 06 | Leap Year Challenge | nested if/else conditions, modulo for divisibility checks, solving a multi-rule logic problem |
 
 ## Tools
 - JavaScript
