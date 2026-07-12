@@ -13,6 +13,7 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 05 | Control Statements | generating random numbers, if/else conditions, comparison and logical operators, rounding decimals with toFixed |
 | 06 | Leap Year Challenge | nested if/else conditions, modulo for divisibility checks, solving a multi-rule logic problem |
 | 07 | Arrays | creating and accessing arrays, checking membership with includes, random selection from an array, building an array with while loops |
+| 08 | While Loop | while loop repetition, conditional singular/plural word handling, building the 99 Bottles song |
 
 ## Tools
 - JavaScript
