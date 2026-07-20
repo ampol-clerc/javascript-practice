@@ -14,6 +14,7 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 06 | Leap Year Challenge | nested if/else conditions, modulo for divisibility checks, solving a multi-rule logic problem |
 | 07 | Arrays | creating and accessing arrays, checking membership with includes, random selection from an array, building an array with while loops |
 | 08 | While Loop | while loop repetition, conditional singular/plural word handling, building the 99 Bottles song |
+| 09 | For Loop | for loop summation, iterating over an array, automating text formatting inside a loop, generating output for each guest |
 
 ## Tools
 - JavaScript
