@@ -9,6 +9,21 @@
   <body>
     <p>Cart Quantity</p>
 
+    <!-- Button: Show Quantity -->
+    <button onclick="console.log(`Cart quantity: ${cartQuantity}`)">
+      Show Quantity
+    </button>
+
+    <!-- Button: Add to Cart -->
+    <button
+      onclick="
+        cartQuantity = cartQuantity + 1;
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      Add to Cart
+    </button>
+
     <script>
       let cartQuantity = 0;
     </script>
