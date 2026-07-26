@@ -17,6 +17,7 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 09 | For Loop | for loop summation, iterating over an array, automating text formatting inside a loop, generating output for each guest |
 | 10 | Simple Calculator | building a calculator UI with a button grid; accumulating input by string concatenation; evaluating math expressions safely with eval() (and understanding why it's risky in production); resetting app state with a clear button |
 | 11 | Cart Quantity | tracking state with a shared variable across multiple buttons; incrementing values by different fixed amounts (+1, +2, +3); resetting state back to zero; logging live variable updates to the console for debugging |
+| 12 | Rock Paper Scissors Game | generating a random computer choice using Math.random() split into three ranges; comparing two values with nested conditional logic to determine win/lose/tie; organizing game logic into separate functions; displaying results with alert() and template literals |
 
 ## Tools
 - JavaScript
