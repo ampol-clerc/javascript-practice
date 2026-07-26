@@ -38,32 +38,7 @@
     </button>
 
     <!-- Button: Paper -->
-    <button
-      onclick="
-        const computerMove = pickComputerMove();
-
-        // Check computer picked in console
-        console.log('Computer picked: ' + computerMove);
-
-        // Compare the moves to get the result
-        let result = '';
-
-        if (computerMove === 'rock') {
-          result = 'You win.';
-        } else if (computerMove === 'paper') {
-          result = 'Tie.';
-        } else if (computerMove === 'scissors') {
-          result = 'You lose.';
-        }
-
-        // Display the result in a popup
-        alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
-
-        console.log('Result: ' + result);
-      "
-    >
-      Paper
-    </button>
+    <button onclick="playGame('paper')">Paper</button>
 
     <!-- Button: Scissors -->
     <button onclick="playGame('scissors')">Scissors</button>
@@ -76,7 +51,7 @@
 
         let result = "";
 
-        // Statement check playerMove - scissors
+        // Statement check playerMove - scissors - paper
         if (playerMove === "scissors") {
           if (computerMove === "rock") {
             result = "You lose.";
@@ -84,6 +59,14 @@
             result = "You win.";
           } else if (computerMove === "scissors") {
             result = "Tie.";
+          }
+        } else if (playerMove === "paper") {
+          if (computerMove === "rock") {
+            result = "You win.";
+          } else if (computerMove === "paper") {
+            result = "Tie.";
+          } else if (computerMove === "scissors") {
+            result = "You lose.";
           }
         }
 
