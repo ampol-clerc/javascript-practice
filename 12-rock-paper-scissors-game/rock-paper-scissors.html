@@ -66,33 +66,34 @@
     </button>
 
     <!-- Button: Scissors -->
-    <button
-      onclick="
+    <button onclick="playGame('scissors')">Scissors</button>
+
+    <script>
+      function playGame(playerMove) {
         const computerMove = pickComputerMove();
 
-        console.log('Computer picked: ' + computerMove);
+        console.log("Computer picked: " + computerMove);
 
-        let result = '';
+        let result = "";
 
-        if (computerMove === 'rock') {
-          result = 'You lose.';
-        } else if (computerMove === 'paper') {
-          result = 'You win.';
-        } else if (computerMove === 'scissors') {
-          result = 'Tie.';
+        // Statement check playerMove - scissors
+        if (playerMove === "scissors") {
+          if (computerMove === "rock") {
+            result = "You lose.";
+          } else if (computerMove === "paper") {
+            result = "You win.";
+          } else if (computerMove === "scissors") {
+            result = "Tie.";
+          }
         }
 
         alert(
-          `You picked scissors. Computer picked ${computerMove}. ${result}`,
+          `You picked ${playerMove}. Computer picked ${computerMove}. ${result}`,
         );
 
-        console.log('Result: ' + result);
-      "
-    >
-      Scissors
-    </button>
+        console.log("Result: " + result);
+      }
 
-    <script>
       function pickComputerMove() {
         const randomNumber = Math.random();
 
