@@ -27,6 +27,19 @@
     <!-- Button: Scissors -->
     <button onclick="playGame('scissors')">Scissors</button>
 
+    <!-- Button: Reset Score -->
+    <button
+      onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+
+        console.log(score);
+      "
+    >
+      Reset Score
+    </button>
+
     <script>
       // Our score using object values
       const score = {
