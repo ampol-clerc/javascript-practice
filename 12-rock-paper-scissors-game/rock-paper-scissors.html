@@ -52,20 +52,25 @@
 
       // Our score using JSON Object and the Local Storage Object
       // to save score more permanently
-      let score = JSON.parse(localStorage.getItem("score"));
+      // Add Default Operator (||)
+      let score = JSON.parse(localStorage.getItem("score")) || {
+        wins: 0,
+        losses: 0,
+        ties: 0,
+      };
 
       // console.log(score);
 
       // If there is no score in local storage
       // Default value
       // Check if the score is null
-      if (score === null) {
+      /* if (score === null) {
         score = {
           wins: 0,
           losses: 0,
           ties: 0,
         };
-      }
+      } */
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
