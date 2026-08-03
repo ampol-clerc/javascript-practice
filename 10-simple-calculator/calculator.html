@@ -72,6 +72,9 @@
 
           // Remember to save the calculation here
           localStorage.setItem('calculation', calculation);
+
+          // Check the result saved to local storage
+          console.log('Saved result: ', localStorage.getItem('calculation'));
         "
       >
         =
@@ -89,6 +92,12 @@
 
           // Remember to save the calculation here
           localStorage.setItem('calculation', calculation);
+
+          // Check if local storage is empty
+          console.log(
+            'Cleared in localStorage: ',
+            localStorage.getItem('calculation'),
+          );
         "
       >
         Clear
@@ -101,6 +110,9 @@
       // Load initial calculation values from LocalStorage
       let calculation = localStorage.getItem("calculation") || "";
 
+      // Check the initial value
+      console.log("Loaded from localStorage: ", calculation);
+
       // There's a lot of duplicated code in the buttons
       // So create a function updateCalculation and reuse the code
       function updateCalculation(value) {
@@ -109,6 +121,12 @@
 
         // Whenever update the calculation, save it using .setItem()
         localStorage.setItem("calculation", calculation);
+
+        // Check if the lastest value is updated in local storage
+        console.log(
+          "Saved to localStorage: ",
+          localStorage.getItem("calculation"),
+        );
       }
     </script>
   </body>
