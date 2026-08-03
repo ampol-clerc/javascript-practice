@@ -90,7 +90,10 @@
     </p>
 
     <script>
-      let calculation = "";
+      /* When the page first loads, get the calculation using .getItem()
+      Use a default value of "" if a calculation doesn't exist in local storage */
+      // Load initial calculation values from LocalStorage
+      let calculation = localStorage.getItem("calculation") || "";
 
       // There's a lot of duplicated code in the buttons
       // So create a function updateCalculation and reuse the code
