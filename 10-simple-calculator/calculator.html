@@ -13,21 +13,14 @@
     <p>
       <button
         onclick="
-          calculation += '1';
-          console.log(calculation);
+          // Use updateCalculation function
+          updateCalculation('1')
         "
       >
         1
       </button>
 
-      <button
-        onclick="
-          calculation += '2';
-          console.log(calculation);
-        "
-      >
-        2
-      </button>
+      <button onclick="updateCalculation('2')">2</button>
 
       <button
         onclick="
@@ -182,6 +175,13 @@
 
     <script>
       let calculation = "";
+
+      // There's a lot of duplicated code in the buttons
+      // So create a function updateCalculation and reuse the code
+      function updateCalculation(value) {
+        calculation += value;
+        console.log(calculation);
+      }
     </script>
   </body>
 </html>
