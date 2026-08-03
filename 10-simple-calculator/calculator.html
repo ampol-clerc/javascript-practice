@@ -69,6 +69,9 @@
         onclick="
           calculation = eval(calculation);
           console.log(calculation);
+
+          // Remember to save the calculation here
+          localStorage.setItem('calculation', calculation);
         "
       >
         =
@@ -83,6 +86,9 @@
         onclick="
           calculation = '';
           console.log('Cleared.');
+
+          // Remember to save the calculation here
+          localStorage.setItem('calculation', calculation);
         "
       >
         Clear
@@ -100,6 +106,9 @@
       function updateCalculation(value) {
         calculation += value;
         console.log(calculation);
+
+        // Whenever update the calculation, save it using .setItem()
+        localStorage.setItem("calculation", calculation);
       }
     </script>
   </body>
