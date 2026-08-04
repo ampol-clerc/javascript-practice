@@ -6,6 +6,12 @@
     <title>Coin Flip</title>
   </head>
 
+  <style>
+    button {
+      height: 100px;
+      width: 100px;
+    }
+  </style>
   <body>
     <h1>Coin Flip Game</h1>
 
@@ -16,10 +22,10 @@
       3. Display the result
     -->
 
-    <script>
-      // Generate a random number
-      const randomNumber = Math.random();
+    <button onclick="playGame('heads')">heads</button>
+    <button onclick="playGame('tails')">tails</button>
 
+    <script>
       // Check randomNumber and save in result
       // if number is less than 0.5 then display "heads", else "tails" in the console
       /* let result;
@@ -29,18 +35,23 @@
         result = "tails";
       } */
 
-      // Switch into Ternary Operators (condition ? A : B)
-      const result = randomNumber < 0.5 ? "heads" : "tails";
-      console.log("Computer random:", result);
-
       /* const guess = "heads";
       if (guess === result) {
         console.log("You win!");
       } else {
         console.log("You lose!");
       } */
-      const guess = "heads";
-      console.log(guess === result ? "You win!" : "You lose!");
+
+      function playGame(guess) {
+        // Generate a random number
+        const randomNumber = Math.random();
+
+        // Switch into Ternary Operators (condition ? A : B)
+        const result = randomNumber < 0.5 ? "heads" : "tails";
+        console.log("Computer random:", result);
+
+        console.log(guess === result ? "You win!" : "You lose!");
+      }
     </script>
   </body>
 </html>
