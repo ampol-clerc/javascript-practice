@@ -16,6 +16,21 @@
       3. Display the result
     -->
 
-    <script></script>
+    <script>
+      // Generate a random number
+      const randomNumber = Math.random();
+
+      let result;
+
+      // Check randomNumber and save in result
+      // if number is less than 0.5 then display "heads", else "tails" in the console
+      if (randomNumber < 0.5) {
+        result = "heads";
+      } else {
+        result = "tails";
+      }
+
+      console.log(result);
+    </script>
   </body>
 </html>
