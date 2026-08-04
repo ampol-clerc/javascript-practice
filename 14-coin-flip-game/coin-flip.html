@@ -19,13 +19,20 @@
       Algorithm
       1. Computer randomly number selects a move (randomNumber)
       2. Compare the moves to get the result
-      3. Display the result
+      3. Update a score
+      4. Display the result
     -->
 
     <button onclick="playGame('heads')">heads</button>
     <button onclick="playGame('tails')">tails</button>
 
     <script>
+      // Score Object
+      let score = {
+        wins: 0,
+        losses: 0,
+      };
+
       // Check randomNumber and save in result
       // if number is less than 0.5 then display "heads", else "tails" in the console
       /* let result;
@@ -54,6 +61,14 @@
         console.log("Computer random:", result);
 
         console.log(guess === result ? "You win!" : "You lose!");
+
+        // Update the score each time after playing
+        if (guess === result) {
+          score.wins++;
+        } else {
+          score.losses++;
+        }
+        console.log(score);
       }
     </script>
   </body>
