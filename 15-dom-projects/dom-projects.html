@@ -9,6 +9,26 @@
   <body>
     <!-- Document Object Model (DOM) - Projects -->
 
-    <script></script>
+    <!-- YouTube subscribe button -->
+    <p>YouTube Subscribe Button</p>
+    <button class="js-subscribe-button" onclick="subscribe()">Subscribe</button>
+
+    <script>
+      /* 
+      Process for JavaScript
+      1. Figure out what steps we need (algorithm)
+      2. Convert these steps in code 
+      */
+
+      function subscribe() {
+        const buttonElement = document.querySelector(".js-subscribe-button");
+
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerHTML = "Subscribed";
+        } else {
+          buttonElement.innerHTML = "Subscribe";
+        }
+      }
+    </script>
   </body>
 </html>
