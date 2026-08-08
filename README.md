@@ -19,6 +19,7 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 11 | Cart Quantity | tracking state with a shared variable across multiple buttons; incrementing values by different fixed amounts (+1, +2, +3); resetting state back to zero; logging live variable updates to the console for debugging |
 | 12 | Rock Paper Scissors Game | generating a random computer choice using Math.random() split into three ranges; comparing two values with nested conditional logic to determine win/lose/tie; organizing game logic into separate functions; displaying results with alert() and template literals |
 | 13 | 	Convert Length | validating function inputs and returning descriptive error messages; converting between units using a fixed conversion rate; handling the edge case where no conversion is needed |
+| 14 | Coin Flip Game | storing related stats together using an object; simplifying conditional logic with the ternary operator; refactoring if/else into a more concise ternary expression; tracking wins/losses with object property mutation |
 
 ## Tools
 - JavaScript
