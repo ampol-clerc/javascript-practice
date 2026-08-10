@@ -31,17 +31,8 @@
     </button>
 
     <!-- Display result on the page -->
-    <p class="js-result result">You win.</p>
-    <p class="js-moves">
-      You
-      <img class="move-icon" src="./images/rock-emoji.png" alt="rock-emoji" />
-      <img
-        class="move-icon"
-        src="./images/scissors-emoji.png"
-        alt="scissors-emoji"
-      />
-      Computer
-    </p>
+    <p class="js-result result"></p>
+    <p class="js-moves"></p>
 
     <!-- Display score on the page -->
     <p class="js-score score"></p>
@@ -138,7 +129,7 @@
 
         // Display moves on the page
         document.querySelector(".js-moves").innerHTML =
-          `You ${playerMove} - ${computerMove} Computer`;
+          `You <img class="move-icon" src="./images/${playerMove}-emoji.png" alt="rock-emoji" /> <img class="move-icon" src="./images/${computerMove}-emoji.png" alt="scissors-emoji" /> Computer`;
 
         console.log("Result: " + result);
         console.log("Wins score: " + score.wins);
