@@ -28,6 +28,20 @@
         background-color: rgb(240, 240, 240);
         color: black;
       }
+
+      .cost-input {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .calculate-button {
+        font-size: 15px;
+        border: none;
+        background-color: green;
+        color: white;
+        padding: 12px 15px;
+        cursor: pointer;
+      }
     </style>
   </head>
 
@@ -58,10 +72,12 @@
     <p>Orders over $40 = FREE shipping.</p>
     <input
       placeholder="Cost of order"
-      class="js-cost-input"
+      class="js-cost-input cost-input"
       onkeydown="handleCostKeydown(event)"
     />
-    <button onclick="calculateTotal()">Calculate</button>
+    <button class="calculate-button" onclick="calculateTotal()">
+      Calculate
+    </button>
     <!-- Display total cost on the page -->
     <p class="js-total-cost"></p>
 
