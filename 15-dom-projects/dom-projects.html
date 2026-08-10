@@ -5,48 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Projects</title>
 
-    <style>
-      body {
-        font-family: Arial;
-      }
-
-      .subscribe-button {
-        border: none;
-        background-color: black;
-        color: white;
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        font-weight: bold;
-        border-radius: 50px;
-        cursor: pointer;
-
-        margin-bottom: 30px;
-      }
-
-      .is-subscribed {
-        background-color: rgb(240, 240, 240);
-        color: black;
-      }
-
-      .cost-input {
-        font-size: 15px;
-        padding: 10px;
-      }
-
-      .calculate-button {
-        font-size: 15px;
-        border: none;
-        background-color: green;
-        color: white;
-        padding: 12px 15px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="./styles/dom-projects.css" />
   </head>
 
   <body>
-    <!-- Document Object Model (DOM) - Projects -->
+    <!-- 
+    Document Object Model (DOM) - Mini Projects 
+      1. YouTube Subscribe Button
+      2. Rock Paper Scissors Game
+      3. Amazon Shipping Calculator
+    -->
 
     <!-- YouTube subscribe button -->
     <p>YouTube Subscribe Button</p>
@@ -81,45 +49,6 @@
     <!-- Display total cost on the page -->
     <p class="js-total-cost"></p>
 
-    <script>
-      /* 
-      Process for JavaScript
-      1. Figure out what steps we need (algorithm)
-      2. Convert these steps in code 
-      */
-
-      function subscribe() {
-        const buttonElement = document.querySelector(".js-subscribe-button");
-
-        if (buttonElement.innerText === "Subscribe") {
-          buttonElement.innerHTML = "Subscribed";
-          buttonElement.classList.add("is-subscribed");
-        } else {
-          buttonElement.innerHTML = "Subscribe";
-          buttonElement.classList.remove("is-subscribed");
-        }
-      }
-
-      function calculateTotal() {
-        const inputElement = document.querySelector(".js-cost-input");
-        // Nmber(): convert string value from <input> to a number for accurate mathematical calculations
-        let cost = Number(inputElement.value);
-
-        if (cost < 40) {
-          cost += 10;
-        }
-
-        document.querySelector(".js-total-cost").innerHTML = `$${cost}`;
-      }
-
-      // Keyboard event
-      function handleCostKeydown(event) {
-        console.log(event.key);
-
-        if (event.key === "Enter") {
-          calculateTotal();
-        }
-      }
-    </script>
+    <script src="./scripts/dom-projects.js"></script>
   </body>
 </html>
