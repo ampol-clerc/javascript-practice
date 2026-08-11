@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+
+    <link rel="stylesheet" href="./calculator.css" />
   </head>
 
   <body>
-    <h1>Calculator</h1>
+    <!-- <h1>Calculator</h1> -->
 
     <!-- Element to display the calculation -->
-    <p class="js-calculation"></p>
+    <p class="js-calculation calculation"></p>
 
     <!-- Rows 1 : 1, 2, 3 and ( + ) -->
     <p>
       <button
+        class="calculator-button"
         onclick="
           // Use updateCalculation function
           updateCalculation('1')
@@ -23,9 +26,12 @@
         1
       </button>
 
-      <button onclick="updateCalculation('2')">2</button>
+      <button class="calculator-button" onclick="updateCalculation('2')">
+        2
+      </button>
 
       <button
+        class="calculator-button"
         onclick="
           // Reuse function in buttons
           updateCalculation('3')
@@ -34,29 +40,47 @@
         3
       </button>
 
-      <button onclick="updateCalculation(' + ')">+</button>
+      <button class="calculator-button" onclick="updateCalculation(' + ')">
+        +
+      </button>
     </p>
 
     <!-- Rows 2 : 4, 5, 6 and ( - ) -->
     <p>
-      <button onclick="updateCalculation('4')">4</button>
+      <button class="calculator-button" onclick="updateCalculation('4')">
+        4
+      </button>
 
-      <button onclick="updateCalculation('5')">5</button>
+      <button class="calculator-button" onclick="updateCalculation('5')">
+        5
+      </button>
 
-      <button onclick="updateCalculation('6')">6</button>
+      <button class="calculator-button" onclick="updateCalculation('6')">
+        6
+      </button>
 
-      <button onclick="updateCalculation(' - ')">-</button>
+      <button class="calculator-button" onclick="updateCalculation(' - ')">
+        -
+      </button>
     </p>
 
     <!-- Rows 3 : 7, 8, 9 and ( * ) -->
     <p>
-      <button onclick="updateCalculation('7')">7</button>
+      <button class="calculator-button" onclick="updateCalculation('7')">
+        7
+      </button>
 
-      <button onclick="updateCalculation('8')">8</button>
+      <button class="calculator-button" onclick="updateCalculation('8')">
+        8
+      </button>
 
-      <button onclick="updateCalculation('9')">9</button>
+      <button class="calculator-button" onclick="updateCalculation('9')">
+        9
+      </button>
 
-      <button onclick="updateCalculation(' * ')">*</button>
+      <button class="calculator-button" onclick="updateCalculation(' * ')">
+        *
+      </button>
     </p>
 
     <!-- Note: eval() takes a string and runs it as code. -->
@@ -64,11 +88,16 @@
     <!-- Only use eval() for learning purposes. -->
     <!-- Rows 4 : 0, ( . ), ( = ) and ( / ) -->
     <p>
-      <button onclick="updateCalculation('0')">0</button>
+      <button class="calculator-button" onclick="updateCalculation('0')">
+        0
+      </button>
 
-      <button onclick="updateCalculation('.')">.</button>
+      <button class="calculator-button" onclick="updateCalculation('.')">
+        .
+      </button>
 
       <button
+        class="calculator-button"
         onclick="
           calculation = eval(calculation);
           // Display the calculation on the page
@@ -84,12 +113,15 @@
         =
       </button>
 
-      <button onclick="updateCalculation(' / ')">/</button>
+      <button class="calculator-button" onclick="updateCalculation(' / ')">
+        /
+      </button>
     </p>
 
     <!-- Button : Clear -->
     <p>
       <button
+        class="calculator-button clear-button"
         onclick="
           calculation = '';
           // Display the calculation on the page
