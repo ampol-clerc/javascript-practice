@@ -17,7 +17,7 @@
     <!-- Rows 1 : 1, 2, 3 and ( + ) -->
     <p>
       <button
-        class="calculator-button"
+        class="calculator-button gray-button"
         onclick="
           // Use updateCalculation function
           updateCalculation('1')
@@ -26,12 +26,15 @@
         1
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('2')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('2')"
+      >
         2
       </button>
 
       <button
-        class="calculator-button"
+        class="calculator-button gray-button"
         onclick="
           // Reuse function in buttons
           updateCalculation('3')
@@ -40,45 +43,72 @@
         3
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation(' + ')">
+      <button
+        class="calculator-button orange-button"
+        onclick="updateCalculation(' + ')"
+      >
         +
       </button>
     </p>
 
     <!-- Rows 2 : 4, 5, 6 and ( - ) -->
     <p>
-      <button class="calculator-button" onclick="updateCalculation('4')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('4')"
+      >
         4
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('5')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('5')"
+      >
         5
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('6')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('6')"
+      >
         6
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation(' - ')">
+      <button
+        class="calculator-button orange-button"
+        onclick="updateCalculation(' - ')"
+      >
         -
       </button>
     </p>
 
     <!-- Rows 3 : 7, 8, 9 and ( * ) -->
     <p>
-      <button class="calculator-button" onclick="updateCalculation('7')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('7')"
+      >
         7
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('8')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('8')"
+      >
         8
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('9')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('9')"
+      >
         9
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation(' * ')">
+      <button
+        class="calculator-button orange-button"
+        onclick="updateCalculation(' * ')"
+      >
         *
       </button>
     </p>
@@ -88,16 +118,22 @@
     <!-- Only use eval() for learning purposes. -->
     <!-- Rows 4 : 0, ( . ), ( = ) and ( / ) -->
     <p>
-      <button class="calculator-button" onclick="updateCalculation('0')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('0')"
+      >
         0
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation('.')">
+      <button
+        class="calculator-button gray-button"
+        onclick="updateCalculation('.')"
+      >
         .
       </button>
 
       <button
-        class="calculator-button"
+        class="calculator-button gray-button"
         onclick="
           calculation = eval(calculation);
           // Display the calculation on the page
@@ -113,7 +149,10 @@
         =
       </button>
 
-      <button class="calculator-button" onclick="updateCalculation(' / ')">
+      <button
+        class="calculator-button orange-button"
+        onclick="updateCalculation(' / ')"
+      >
         /
       </button>
     </p>
@@ -121,7 +160,7 @@
     <!-- Button : Clear -->
     <p>
       <button
-        class="calculator-button clear-button"
+        class="calculator-button clear-button gray-button"
         onclick="
           calculation = '';
           // Display the calculation on the page
