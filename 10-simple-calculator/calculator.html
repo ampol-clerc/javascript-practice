@@ -9,6 +9,9 @@
   <body>
     <h1>Calculator</h1>
 
+    <!-- Element to display the calculation -->
+    <p class="js-calculation"></p>
+
     <!-- Rows 1 : 1, 2, 3 and ( + ) -->
     <p>
       <button
@@ -56,19 +59,20 @@
       <button onclick="updateCalculation(' * ')">*</button>
     </p>
 
+    <!-- Note: eval() takes a string and runs it as code. -->
+    <!-- Avoid using eval() in real world projects since it can potentially be given harmful code to run. -->
+    <!-- Only use eval() for learning purposes. -->
     <!-- Rows 4 : 0, ( . ), ( = ) and ( / ) -->
     <p>
       <button onclick="updateCalculation('0')">0</button>
 
       <button onclick="updateCalculation('.')">.</button>
 
-      <!-- Note: eval() takes a string and runs it as code. -->
-      <!-- Avoid using eval() in real world projects since it can potentially be given harmful code to run. -->
-      <!-- Only use eval() for learning purposes. -->
       <button
         onclick="
           calculation = eval(calculation);
-          console.log(calculation);
+          // Display the calculation on the page
+          displayCalculation();
 
           // Remember to save the calculation here
           localStorage.setItem('calculation', calculation);
@@ -88,7 +92,8 @@
       <button
         onclick="
           calculation = '';
-          console.log('Cleared.');
+          // Display the calculation on the page
+          displayCalculation();
 
           // Remember to save the calculation here
           localStorage.setItem('calculation', calculation);
@@ -110,23 +115,23 @@
       // Load initial calculation values from LocalStorage
       let calculation = localStorage.getItem("calculation") || "";
 
-      // Check the initial value
-      console.log("Loaded from localStorage: ", calculation);
+      // Display the calculation when the page first loads
+      displayCalculation();
 
       // There's a lot of duplicated code in the buttons
-      // So create a function updateCalculation and reuse the code
+      // Create a function updateCalculation and reuse the code
       function updateCalculation(value) {
         calculation += value;
-        console.log(calculation);
+
+        // Display the calculation on the page
+        displayCalculation();
 
         // Whenever update the calculation, save it using .setItem()
         localStorage.setItem("calculation", calculation);
+      }
 
-        // Check if the lastest value is updated in local storage
-        console.log(
-          "Saved to localStorage: ",
-          localStorage.getItem("calculation"),
-        );
+      function displayCalculation() {
+        document.querySelector(".js-calculation").innerHTML = calculation;
       }
     </script>
   </body>
