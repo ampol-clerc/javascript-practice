@@ -1,5 +1,27 @@
 const todoList = [];
 
+// Take our array and display each value on the page
+/*.
+  Steps (Algorith)
+  1. Loop through the array
+  2. Create some HTML code for each todo
+  3. Put the HTML on web page
+*/
+
+function renderTodoList() {
+  let todoListHTML = "";
+
+  for (let i = 0; i <= todoList.length - 1; i++) {
+    const todo = todoList[i];
+    const html = `<p>${todo}</p>`;
+    todoListHTML += html;
+  }
+
+  console.log(todoListHTML);
+
+  document.querySelector(".js-todo-list").innerHTML = todoListHTML;
+}
+
 function addTodo() {
   // To get the text in the textbox
   // Get an element with the class "js-name-input" and put it into our JS
@@ -15,4 +37,6 @@ function addTodo() {
 
   // Reset the textbox empty
   inputElement.value = "";
+
+  renderTodoList();
 }
