@@ -12,10 +12,13 @@ function renderTodoList() {
   let todoListHTML = "";
 
   for (let i = 0; i <= todoList.length - 1; i++) {
-    const todo = todoList[i];
+    const todoObject = todoList[i];
+    // const name = todoObject.name;
+    // const dueDate = todoObject.dueDate;
+    const { name, dueDate } = todoObject;
     const html = `
     <p>
-      ${todo} 
+      ${name} ${dueDate} 
       <button onclick="
         todoList.splice(${i}, 1);
         renderTodoList();
@@ -24,8 +27,6 @@ function renderTodoList() {
     `;
     todoListHTML += html;
   }
-
-  console.log(todoListHTML);
 
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
@@ -39,9 +40,15 @@ function addTodo() {
   const name = inputElement.value;
   // console.log(name);
 
+  // Get date selector element and put it into JS
+  const dateInputElement = document.querySelector(".js-due-date-input");
+  const dueDate = dateInputElement.value;
+
   // Add a value to the array
-  todoList.push(name);
-  console.log(todoList);
+  todoList.push({
+    name: name,
+    dueDate: dueDate,
+  });
 
   // Reset the textbox empty
   inputElement.value = "";
