@@ -21,7 +21,11 @@ Practice projects from Dr. Angela Yu's Full Stack Web Development Bootcamp.
 | 13 | 	Convert Length | validating function inputs and returning descriptive error messages; converting between units using a fixed conversion rate; handling the edge case where no conversion is needed |
 | 14 | Coin Flip Game | storing related stats together using an object; simplifying conditional logic with the ternary operator; refactoring if/else into a more concise ternary expression; tracking wins/losses with object property mutation |
 | 15 | DOM Projects | manipulating page content directly with the DOM (querySelector, innerHTML, classList); persisting data across page reloads with localStorage; converting user input strings into numbers for calculations; responding to keyboard events (Enter key); organizing a multi-page project with separate scripts, styles |
+| 16 | Todo List | rendering a dynamic list from an array by building HTML with a loop; destructuring object properties for cleaner code; adding items to an array and re-rendering the UI; removing items from an array by index with splice(); styling form layouts with CSS grid |
 
 ## Tools
+- HTML
+- CSS
 - JavaScript
 - VS Code
+- Git / GitHub
